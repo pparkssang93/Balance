@@ -1,0 +1,5 @@
+# dist
+dist/
+
+# git
+.gitmessage
