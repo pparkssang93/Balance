@@ -1,8 +1,5 @@
-function component() {
-    const element = document.createElement("div");
+import { test, MyButton } from "./src/view/myBtn.js";
 
-    element.innerHTML = "Hello world";
-    return element;
-}
+customElements.define("my-button", MyButton);
 
-document.body.appendChild(component());
+document.getElementById("app").insertAdjacentHTML("beforeend", `<my-button></my-button>`);
